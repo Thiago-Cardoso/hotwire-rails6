@@ -3082,3 +3082,352 @@ Started GET "/cable/" [WebSocket] for 172.31.0.1 at 2021-09-09 23:16:15 -0300
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 Turbo::StreamsChannel is transmitting the subscription confirmation
 Turbo::StreamsChannel is streaming from tweets
+Started GET "/cable" for 192.168.32.1 at 2021-09-09 23:55:00 -0300
+Cannot render console from 192.168.32.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/tweets" for 192.168.32.1 at 2021-09-09 23:55:00 -0300
+Cannot render console from 192.168.32.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "tweets_backend_development" does not exist
+):
+  
+activerecord (6.1.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.4.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.4.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.4.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.4.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.4.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.4.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.2) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.4.0) lib/puma/configuration.rb:249:in `call'
+puma (5.4.0) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.4.0) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.4.0) lib/puma/request.rb:76:in `handle_request'
+puma (5.4.0) lib/puma/server.rb:440:in `process_client'
+puma (5.4.0) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "tweets_backend_development" does not exist
+):
+  
+activerecord (6.1.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.4.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.4.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.4.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.4.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.4.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.4.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.2) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.4.0) lib/puma/configuration.rb:249:in `call'
+puma (5.4.0) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.4.0) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.4.0) lib/puma/request.rb:76:in `handle_request'
+puma (5.4.0) lib/puma/server.rb:440:in `process_client'
+puma (5.4.0) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/cable" for 192.168.32.1 at 2021-09-09 23:55:00 -0300
+Cannot render console from 192.168.32.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "tweets_backend_development" does not exist
+):
+  
+activerecord (6.1.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.4.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.4.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.4.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.4.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.4.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.4.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.2) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.4.0) lib/puma/configuration.rb:249:in `call'
+puma (5.4.0) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.4.0) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.4.0) lib/puma/request.rb:76:in `handle_request'
+puma (5.4.0) lib/puma/server.rb:440:in `process_client'
+puma (5.4.0) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (959.9ms)[0m  [1m[35mCREATE DATABASE "tweets_backend_development" ENCODING = 'unicode'[0m
+  [1m[35m (864.8ms)[0m  [1m[35mCREATE DATABASE "tweets_backend_test" ENCODING = 'unicode'[0m
+  [1m[35m (42.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2823187034563226730)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTweets (20210907040050)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (26.8ms)[0m  [1m[35mCREATE TABLE "tweets" ("id" bigserial primary key, "body" text, "likes" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210907040050"]]
+  [1m[36mTRANSACTION (59.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-09-10 02:55:30.823339"], ["updated_at", "2021-09-10 02:55:30.823339"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2823187034563226730)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/tweets" for 192.168.32.1 at 2021-09-09 23:55:42 -0300
+Cannot render console from 192.168.32.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TweetsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tweets/index.html.erb within layouts/application
+  Rendered tweets/_form.html.erb (Duration: 25.0ms | Allocations: 4511)
+  [1m[36mTweet Load (3.0ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" ORDER BY "tweets"."created_at" DESC[0m
+  ↳ app/views/tweets/index.html.erb:8
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 23)
+  Rendered tweets/index.html.erb within layouts/application (Duration: 54.3ms | Allocations: 7653)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 199.8ms | Allocations: 17723)
+Completed 200 OK in 258ms (Views: 201.6ms | ActiveRecord: 9.5ms | Allocations: 26126)
+
+
+Started GET "/cable" for 192.168.32.1 at 2021-09-09 23:55:43 -0300
+Cannot render console from 192.168.32.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/cable/" [WebSocket] for 192.168.32.1 at 2021-09-09 23:55:43 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Turbo::StreamsChannel is transmitting the subscription confirmation
+Turbo::StreamsChannel is streaming from tweets
+Started POST "/tweets" for 192.168.32.1 at 2021-09-09 23:55:58 -0300
+Cannot render console from 192.168.32.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TweetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tweet"=>{"body"=>"Hello hotwire"}, "commit"=>"Create Tweet"}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tweets_controller.rb:13:in `block in create'
+  [1m[36mTweet Create (0.8ms)[0m  [1m[32mINSERT INTO "tweets" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["body", "Hello hotwire"], ["created_at", "2021-09-10 02:55:58.296175"], ["updated_at", "2021-09-10 02:55:58.296175"]]
+  ↳ app/controllers/tweets_controller.rb:13:in `block in create'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tweets_controller.rb:13:in `block in create'
+  Rendered tweets/_tweet.html.erb (Duration: 2.9ms | Allocations: 636)
+[ActionCable] Broadcasting to tweets: "<turbo-stream action=\"prepend\" target=\"tweets\"><template><turbo-frame id=\"tweet_1\">\n  <div style=\"background: lightgrey; width: 300px; padding: 10px;\">\n    Hello hotwire\n    <br>\n    <a href=\"/tweets/1/edit\">edit</a>\n    <form class=\"button_to\" method=\"post\" action=\"/tweets/1?like=true\"><input type=\"hidden\" name=\"_method\" value=\"put\" /><input type=\"submit\" value=\"likes (0)\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"IPCT-VMRIFnAD9fI2jTuaurf-aCbyCLuTQlUpBQjA_gdge4RLMdwmHtW4UwFX1PxNoRck6lSL6NjmbsdZUC0hQ\" /></form>\n    <form class=\"button_to\" method=\"post\" action=\"/tweets/1\"><input type=\"hidden\" name=\"_method\" value=\"delete\" /><input type=\"submit\" value=\"delete\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"lfagHbzTgTYvCyhHyvpJvtks0q25pJfBnhWWV211LEZfmvoEDuTI-J1TYlbGLxsLu-xDaKZU8PJk3QzKXpAxXw\" /></form>\n  </div>\n  <br>\n</turbo-frame></template></turbo-stream>"
+Redirected to http://localhost:3000/tweets
+Completed 302 Found in 17ms (ActiveRecord: 4.9ms | Allocations: 6609)
+
+
+Turbo::StreamsChannel transmitting "<turbo-stream action=\"prepend\" target=\"tweets\"><template><turbo-frame id=\"tweet_1\">\n  <div style=\"background: lightgrey; width: 300px; padding: 10px;\">\n    Hello hotwire\n    <br>\n    <a href=\"/tweets/1/edit\">edit</a>\n    <form class=\"button_to\" method=\"post\" action=\"/tweets/1... (via streamed from tweets)
+Started GET "/tweets" for 192.168.32.1 at 2021-09-09 23:55:58 -0300
+Cannot render console from 192.168.32.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TweetsController#index as TURBO_STREAM
+  Rendering tweets/index.html.erb
+  Rendered tweets/_form.html.erb (Duration: 1.1ms | Allocations: 500)
+  [1m[36mTweet Load (3.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" ORDER BY "tweets"."created_at" DESC[0m
+  ↳ app/views/tweets/index.html.erb:8
+  Rendered collection of tweets/_tweet.html.erb [1 times] (Duration: 2.2ms | Allocations: 529)
+  Rendered tweets/index.html.erb (Duration: 8.8ms | Allocations: 2566)
+Completed 200 OK in 11ms (Views: 5.8ms | ActiveRecord: 3.4ms | Allocations: 3443)
+
+
+Started PUT "/tweets/1?like=true" for 192.168.32.1 at 2021-09-09 23:56:01 -0300
+Cannot render console from 192.168.32.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TweetsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "like"=>"true", "id"=>"1"}
+  [1m[36mTweet Load (0.5ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" WHERE "tweets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tweets_controller.rb:70:in `set_tweet'
+  [1m[36mTweet Update All (27.3ms)[0m  [1m[33mUPDATE "tweets" SET "likes" = COALESCE("likes", 0) + $1 WHERE "tweets"."id" = $2[0m  [["likes", 1], ["id", 1]]
+  ↳ app/controllers/tweets_controller.rb:34:in `update'
+Redirected to http://localhost:3000/tweets/1
+Completed 302 Found in 37ms (ActiveRecord: 28.2ms | Allocations: 3915)
+
+
+Started GET "/tweets/1" for 192.168.32.1 at 2021-09-09 23:56:01 -0300
+Cannot render console from 192.168.32.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TweetsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mTweet Load (0.7ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" WHERE "tweets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tweets_controller.rb:70:in `set_tweet'
+  Rendering tweets/show.html.erb
+  Rendered tweets/show.html.erb (Duration: 1.2ms | Allocations: 554)
+Completed 200 OK in 5ms (Views: 1.5ms | ActiveRecord: 0.7ms | Allocations: 2202)
+
+
+Started PUT "/tweets/1?like=true" for 192.168.32.1 at 2021-09-09 23:56:01 -0300
+Cannot render console from 192.168.32.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TweetsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "like"=>"true", "id"=>"1"}
+  [1m[36mTweet Load (0.5ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" WHERE "tweets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tweets_controller.rb:70:in `set_tweet'
+  [1m[36mTweet Update All (127.6ms)[0m  [1m[33mUPDATE "tweets" SET "likes" = COALESCE("likes", 0) + $1 WHERE "tweets"."id" = $2[0m  [["likes", 1], ["id", 1]]
+  ↳ app/controllers/tweets_controller.rb:34:in `update'
+Redirected to http://localhost:3000/tweets/1
+Completed 302 Found in 132ms (ActiveRecord: 128.1ms | Allocations: 2313)
+
+
+Started GET "/tweets/1" for 192.168.32.1 at 2021-09-09 23:56:01 -0300
+Cannot render console from 192.168.32.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TweetsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mTweet Load (0.6ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" WHERE "tweets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tweets_controller.rb:70:in `set_tweet'
+  Rendering tweets/show.html.erb
+  Rendered tweets/show.html.erb (Duration: 9.8ms | Allocations: 377)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.6ms | Allocations: 1890)
+
+
+Started POST "/tweets" for 192.168.32.1 at 2021-09-09 23:56:11 -0300
+Cannot render console from 192.168.32.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TweetsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tweet"=>{"body"=>"Other"}, "commit"=>"Create Tweet"}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tweets_controller.rb:13:in `block in create'
+  [1m[36mTweet Create (1.0ms)[0m  [1m[32mINSERT INTO "tweets" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["body", "Other"], ["created_at", "2021-09-10 02:56:11.323146"], ["updated_at", "2021-09-10 02:56:11.323146"]]
+  ↳ app/controllers/tweets_controller.rb:13:in `block in create'
+  [1m[36mTRANSACTION (22.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tweets_controller.rb:13:in `block in create'
+  Rendered tweets/_tweet.html.erb (Duration: 0.9ms | Allocations: 354)
+[ActionCable] Broadcasting to tweets: "<turbo-stream action=\"prepend\" target=\"tweets\"><template><turbo-frame id=\"tweet_2\">\n  <div style=\"background: lightgrey; width: 300px; padding: 10px;\">\n    Other\n    <br>\n    <a href=\"/tweets/2/edit\">edit</a>\n    <form class=\"button_to\" method=\"post\" action=\"/tweets/2?like=true\"><input type=\"hidden\" name=\"_method\" value=\"put\" /><input type=\"submit\" value=\"likes (0)\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"j1YMeQCzjbOYfLUJyB_1il6hpJzYiQ16d0vOYb0LNvZ7_pBvu3Q_0W4o_ot3t2zYaFnjvXbBez9cLTWbWFc4WQ\" /></form>\n    <form class=\"button_to\" method=\"post\" action=\"/tweets/2\"><input type=\"hidden\" name=\"_method\" value=\"delete\" /><input type=\"submit\" value=\"delete\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"V3XaIMhYjoBa8ChrEH07uY68_7EowzdhCtDGBIA72cnohl0Ui3KM-nbLVVnPRGKTR8db6LAjzwg5bFyyMzbDYw\" /></form>\n  </div>\n  <br>\n</turbo-frame></template></turbo-stream>"
+Redirected to http://localhost:3000/tweets
+Turbo::StreamsChannel transmitting "<turbo-stream action=\"prepend\" target=\"tweets\"><template><turbo-frame id=\"tweet_2\">\n  <div style=\"background: lightgrey; width: 300px; padding: 10px;\">\n    Other\n    <br>\n    <a href=\"/tweets/2/edit\">edit</a>\n    <form class=\"button_to\" method=\"post\" action=\"/tweets/2?like=tr... (via streamed from tweets)
+Completed 302 Found in 31ms (ActiveRecord: 23.7ms | Allocations: 4370)
+
+
+Started GET "/tweets" for 192.168.32.1 at 2021-09-09 23:56:11 -0300
+Cannot render console from 192.168.32.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TweetsController#index as TURBO_STREAM
+  Rendering tweets/index.html.erb
+  Rendered tweets/_form.html.erb (Duration: 0.9ms | Allocations: 499)
+  [1m[36mTweet Load (0.9ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" ORDER BY "tweets"."created_at" DESC[0m
+  ↳ app/views/tweets/index.html.erb:8
+  Rendered collection of tweets/_tweet.html.erb [2 times] (Duration: 0.9ms | Allocations: 635)
+  Rendered tweets/index.html.erb (Duration: 3.8ms | Allocations: 2404)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.9ms | Allocations: 3167)
+
+
+Started PUT "/tweets/2?like=true" for 192.168.32.1 at 2021-09-09 23:56:13 -0300
+Cannot render console from 192.168.32.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TweetsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "like"=>"true", "id"=>"2"}
+  [1m[36mTweet Load (0.6ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" WHERE "tweets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tweets_controller.rb:70:in `set_tweet'
+  [1m[36mTweet Update All (130.4ms)[0m  [1m[33mUPDATE "tweets" SET "likes" = COALESCE("likes", 0) + $1 WHERE "tweets"."id" = $2[0m  [["likes", 1], ["id", 2]]
+  ↳ app/controllers/tweets_controller.rb:34:in `update'
+Redirected to http://localhost:3000/tweets/2
+Completed 302 Found in 134ms (ActiveRecord: 131.0ms | Allocations: 2329)
+
+
+Started GET "/tweets/2" for 192.168.32.1 at 2021-09-09 23:56:13 -0300
+Cannot render console from 192.168.32.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TweetsController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mTweet Load (0.6ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" WHERE "tweets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tweets_controller.rb:70:in `set_tweet'
+  Rendering tweets/show.html.erb
+  Rendered tweets/show.html.erb (Duration: 0.7ms | Allocations: 377)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.6ms | Allocations: 1889)
+
+
