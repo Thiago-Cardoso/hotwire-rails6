@@ -7,7 +7,6 @@ Development of project using Hotwire with Rails 6 and docker together Redis, bas
 
 <img src="https://github.com/Thiago-Cardoso/hotwire-rails6/blob/main/app/assets/images/screen.png" width="663" height="566">
 
-
 ## Log Turbo Stream
 
 <img src="https://github.com/Thiago-Cardoso/hotwire-rails6/blob/main/app/assets/images/log.png" width="1352" height="209">
